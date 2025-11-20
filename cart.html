@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cake Shop - Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">🍰 <span class="brand">Cake Shop</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="pastries.html">Pastries</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section" style="max-width:750px; margin:auto; text-align:center;">
+    <h1 class="section-title">Your Cart</h1>
+
+    <div id="cart-page-items" class="cart-page" 
+         style="margin-top:20px; text-align:left; border-radius:14px; padding:20px;">
+    </div>
+
+    <div class="cart-actions-page" 
+         style="display:flex; justify-content:space-between; margin-top:20px; align-items:center;">
+        
+        <div class="cart-summary" 
+             style="font-size:20px; font-weight:700; color:var(--brown);">
+             Total: ₹<span id="cart-page-total">0</span>
+        </div>
+
+        <a class="btn primary" id="go-checkout" href="checkout.html" 
+           style="padding:12px 26px; font-size:16px; border-radius:10px;">
+           Proceed to Checkout
+        </a>
+    </div>
+</main>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cake Shop - Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">🍰 <span class="brand">Cake Shop</span></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="pastries.html">Pastries</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section" style="max-width:600px; margin:auto; text-align:center;">
+
+    <h1 class="section-title">Checkout</h1>
+
+    <div id="checkout-summary" class="checkout-summary" 
+         style="margin-top:20px; text-align:left; border-radius:14px; padding:18px;">
+    </div>
+
+    <div class="checkout-form" style="margin-top:25px;">
+
+      <input id="cust-name" placeholder="Full name"
+             style="width:100%; padding:14px; border-radius:10px; border:1px solid #ccc; margin-bottom:12px;">
+
+      <input id="cust-phone" placeholder="Phone number"
+             style="width:100%; padding:14px; border-radius:10px; border:1px solid #ccc; margin-bottom:12px;">
+
+      <input id="cust-address" placeholder="Delivery address"
+             style="width:100%; padding:14px; border-radius:10px; border:1px solid #ccc; margin-bottom:18px;">
+
+      <button class="btn primary" onclick="placeOrder()" 
+              style="width:100%; padding:14px; font-size:16px; border-radius:10px;">
+              Place Order
+      </button>
+
+    </div>
+
+</main>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">🍰 <span class="brand">Cake Shop</span></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="cakes.html">Cakes</a>
+            <a href="pastries.html">Pastries</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section container center-page">
+   <h1 class="section-title">Get in Touch</h1>
+<p class="section-sub">We’re here to help you—contact us anytime!</p>
+
+
+    <div style="margin-top:25px;">
+
+        <input 
+            type="text" 
+            placeholder="Your Name" 
+            style="width:100%; padding:14px; margin:10px 0; border-radius:10px; border:1px solid #ddd;"
+        >
+
+        <input 
+            type="email" 
+            placeholder="Your Email" 
+            style="width:100%; padding:14px; margin-bottom:10px; border-radius:10px; border:1px solid #ddd;"
+        >
+
+        <textarea 
+            placeholder="Your Message" 
+            style="width:100%; padding:14px; height:150px; border-radius:10px; border:1px solid #ddd;"
+        ></textarea>
+
+       <button 
+    class="btn primary" 
+    style="margin-top:18px; padding:14px 30px; font-size:16px;"
+    onclick="validateContact()"
+>
+    Send Message
+</button>
+
+<p id="contact-msg" style="margin-top:15px; font-size:16px;"></p>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
